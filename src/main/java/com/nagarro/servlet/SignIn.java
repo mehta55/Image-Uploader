@@ -18,7 +18,6 @@ import com.nagarro.service.Factory;
 @WebServlet("/SignIn")
 public class SignIn extends HttpServlet {
 
-	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
