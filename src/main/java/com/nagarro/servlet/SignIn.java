@@ -9,11 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.hibernate.Session;
-
-import com.nagarro.dao.UserDao;
-import com.nagarro.daoImp.UserDaoImp;
-import com.nagarro.dto.User;
 import com.nagarro.service.Authenticator;
 import com.nagarro.service.Factory;
 
@@ -44,7 +39,7 @@ public class SignIn extends HttpServlet {
 			}
 		} else {
 			request.getSession().setAttribute("alert", "Invalid Username or Password!");
-			response.sendRedirect("index.jsp");
+		 	response.sendRedirect("index.jsp");
 		}
 
 	}
